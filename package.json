@@ -4,7 +4,7 @@
   "description": "projeto de testes automatizados com nigthwatch",
   "main": "index.js",
   "scripts": {
-    "test:login": ".\\node_modules\\.bin\\nightwatch.cmd --group login",
+    "test:login": ".\\node_modules\\.bin\\nightwatch.cmd --group login --headless",
     "test:nologin": ".\\node_modules\\.bin\\nightwatch.cmd --skipgroup login",
     "test:smoke": ".\\node_modules\\.bin\\nightwatch.cmd --tag smoke --reporter mochawesome",
     "stage:smoke": ".\\node_modules\\.bin\\nightwatch.cmd --tag smoke --env=stage",
@@ -31,7 +31,7 @@
     "faker": "^4.1.0",
     "geckodriver": "^1.19.1",
     "mochawesome": "^4.1.0",
-    "nightwatch": "^1.2.4",
+    "nightwatch": "^1.3.4",
     "pg": "^7.12.1"
   }
 }
